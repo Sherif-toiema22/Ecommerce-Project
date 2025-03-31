@@ -20,7 +20,6 @@ public class productService {
 
     }
     public Product addProduct(Product product) {
-        System.out.println("hello every one");
         return prepository.save(product);
     }
     public void updateProduct(Product product) {
