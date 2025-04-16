@@ -1,8 +1,8 @@
 package com.example.commerce.model;
-
-
 import jakarta.persistence.*;
 import lombok.*;
+import java.math.BigDecimal;
+import java.util.Date;
 
 @Setter
 @Getter
@@ -18,14 +18,11 @@ public class Product {
 //    @Column(nullable = false)
     private String name;
 //    @Column(nullable = false)
-    private double price;
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                '}';
-    }
+    private BigDecimal price;
+    private String desc;
+    private String brand;
+    private String category;
+    private Date releaseDate ;
+    private int quantity;
+    private boolean available;
 }
