@@ -15,14 +15,18 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-//    @Column(nullable = false)
     private String name;
-//    @Column(nullable = false)
-    private BigDecimal price;
-    private String desc;
+    private String description;
     private String brand;
+    private BigDecimal price;
     private String category;
-    private Date releaseDate ;
-    private int quantity;
-    private boolean available;
+
+    private Date releaseDate;
+    private boolean productAvailable;
+    private int stockQuantity;
+
+    private String imageName;
+    private String imageType;
+    @Lob
+    private byte[] imageDate;
 }
